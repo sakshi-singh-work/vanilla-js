@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla Js Learning</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+        height: 100vh;
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is vanilla js</h1>
+    <div id="tab"></div>
+    Enter Expense name: <input id="expenseName" type="text" /> Enter Amount:
+    <input id="expenseAmt" type="text" />
+    <button id="expenseTracker">Add Data</button>
+    <!-- <h1 id="headingEl">
+      <div id="content">hhhh <span>hii</span></div>
+    </h1>
+    <button id="btnCounter">+</button>
+    <input id="textInput" type="number" />
+    <nav>
+      <a>Home</a>
+      <a>About</a>
+      <a>Contact</a>
+      <a style="display: block">Pricing</a>
+    </nav> -->
+  </body>
+
+  <script>
+    const expenseName = document.querySelector("#expenseName").addEventListener("click",(e)=>{});
+    const expenseAmt = document.querySelector("#expenseAmt");
+    const expenseTracker = document.querySelector("#expenseTracker");
+    const tab = document.querySelector("#tab");
+    tab.innerHTML=``
+    const arrayOfExpense = [];
+    arrayOfExpense.map((e) => {
+      e.desc;
+    });
+    function handleExpense() {
+      let expense = {};
+
+      expense.desc = expenseName.value;
+      expense.amount = expenseAmt.value;
+      arrayOfExpense.push(expense);
+      console.clear();
+      console.table(arrayOfExpense);
+    }
+    expenseTracker.addEventListener("click", handleExpense, false);
+    //create a count var
+    // const header = document.querySelector("#headingEl");
+    // const divText = document.querySelector("#content");
+    // let counter = 0;
+    // console.log(header.innerText);
+    // header.innerHTML = `<div>Hi this is header ${counter}<div>`;
+    // divText.textContent = 67;
+    // const navElement = document.querySelector("nav");
+    // // https://www.freecodecamp.org/news/innerhtml-vs-innertext-vs-textcontent/
+    // // console.log(navElement.innerText, "innertext");
+    // function incrementCounter() {
+    //   //update counter
+    //   const number = document.querySelector("#textInput");
+    //   let expense = parseInt(number.value);
+    //   counter = counter + expense;
+    //   header.textContent = counter;
+    //   console.log(counter);
+    // }
+    // // const inputText = document.getElementById("textInput");
+    // const element = document.querySelector("#btnCounter");
+
+    // //listen to event
+
+    // element.addEventListener("click", incrementCounter, false);
+  </script>
+</html>
